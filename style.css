@@ -1,0 +1,74 @@
+body {
+  background: #181a20;
+  color: #f1f1f1;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #23272f;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 24px;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(7, 48px);
+  grid-template-rows: repeat(7, 48px);
+  gap: 6px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.cell {
+  width: 48px;
+  height: 48px;
+  background: #2c313c;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.cell.player1 {
+  background: #306418;
+}
+
+.cell.player2 {
+  background: #F2F2F2;
+}
+
+#game-status {
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+  min-height: 24px;
+}
+
+#reset-btn {
+  background: #393e46;
+  color: #f1f1f1;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#reset-btn:hover {
+  background: #465163;
+} 
